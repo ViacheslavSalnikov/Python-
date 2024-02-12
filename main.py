@@ -273,7 +273,33 @@
 # a = {1, 8, 5}
 # b = frozenset(a)  #замороженное множество. Используем в тех случаях, когда мы точно уверены, что нельзя изменять изначальное множествро
  
-list1 = [1, 1, 2, -1, 5, 4, 8]
-print(set(list1))
+# list1 = [1, 1, 2, -1, 5, 4, 8]
+# print(set(list1))
+# print(len(set(list1)))
 
+# list1 = [1, 2, 3, 4, 5]
+# k = 3
+# k %= len(list1)
+# res_list = list()
+# for i in range(k):
+#     res_list.append(list1[len(list1) - k + i])
+# for i in range(len(list1) - k):
+#     res_list.append(list1[i])
+# print(res_list)
+
+# list1 = {"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII": "S005"}, {" V ":"S009"}, {"VIII":"S007"}
+
+# res_set = set()
+# for dict in list1:
+#     for key in dict:
+#         res_set.add(dict[key])
+# print(res_set)
+
+# list1 = [0, -1, 5, 2, 3]
+# count = 0
+# for i in range(1, len(list1)):
+#     if list1[i - 1] < list1[i]:
+#         count += 1
+
+# print(count)
 
