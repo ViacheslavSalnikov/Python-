@@ -160,9 +160,9 @@
     
 # print(min, max)
 
-list_1 = []
-list_1 = list()
-list_1 = [1, 8, 7, 9]
+# list_1 = []
+# list_1 = list()
+# list_1 = [1, 8, 7, 9]
 # print(list_1) # если поставить перед list знак *, то уберутся все скобки и запятые
 
 # for i in list_1:
@@ -171,4 +171,109 @@ list_1 = [1, 8, 7, 9]
 # print(len(list_1))  # узнать размер нашего списка
 
 # print(list_1[2]) # обращение к списку по элементно
+
+# list_1 = [1, 5]
+# print(list_1)
+# list_1.append(8)   #функция append позволяет добавить какой-то элемент в конец нашего списка
+# print(list_1)
+
+# list_1 = []
+# print(list_1)
+# for i in range(5):     #c помощью цикла for мы добавляем к циклу какие-то значения
+#     list_1.append(i)
+#     print(list_1) 
+
+# list_1 = [12, 7, -1, 12, 0]
+# print(list_1.pop())   #функция pop - это функция удаления последнего элемента, но так же эта функция возвращает последний элемент , если создать переменную
+# print(list_1)
+
+# list_1 = [12, 7, -1, 12, 0]
+# print(list_1.pop(1))   #удаление конкретного элемента из списка
+# print(list_1)
+
+# list_1 = [12, 7, -1, 12, 0]
+# print(list_1.insert(2, 11)) #добавление элемента на нужную позицию (1ый аргумент - это позиция на который нужно втсавить элемент, 2ой аргумент - это значение)
+# print(list_1)
+
+# list_1 = [1, 2, 3, 5, 10, -14, -5, 8]
+# print(list_1[0])
+# print(list_1[1])
+# print(list_1[-1])
+# print(list_1[-5])
+# print(list_1[: ])
+# print(list_1[:2])
+# print(list_1[len(list_1)-2:])
+# print(list_1[0:len(list_1):6])  # c шагом 6
+# print(list_1[::6])   # с шагом 6
+
+#Кортежи
+# t = ()
+# print(type(t))
+
+# t = (1)
+# print(type(t))
+
+# t = (1, 2, 1990)
+# print(type(t))
+
+# v = [21, 2, 1990]
+# print(v)
+# print(type(v))
+
+# v = tuple(v)
+# print(v)
+# print(type(v))
+
+# a,b,c = v
+# print(a, b, c)
+
+# t = (1, 2, 3, 4, 5)
+# print(t[2])
+# for i in t:
+#     print(i)
+# for i in range(len(t)):
+#     print(t[i])
+# d = {}
+# d = dict()
+
+# d['q'] = 'qwerty'
+# print(d)
+
+# d['w'] = 'werty'
+# print(d['q'])
+
+#Cловари
+# dictionary = {}
+# dictionary ={'up': '↑', 'left': '←', 'down': '↓', 'right': '→'}
+# del dictionary['left']
+# for item in dictionary:
+    # print(item) 
+    # print('{}: {}'.format(item, dictionary[item])) #выводится значение по славарю и по ключу
+# print(dictionary.items()) # При вводе dictionary.items каждый элемент будет являтся картежем
+
+#Множества
+# colors = {'red', 'green', 'blue'}
+# print(colors)
+# colors.add('black')
+# print(colors)
+# colors.remove('red')
+# print(colors)
+# colors.discard('red') #проверяет есть ли это значение в нашем множестве
+# colors.clear()  #очищает все множества из функции
+# print(colors)  #выводится пустое множество set()
+
+# Операция со множеством в Python
+# a = {1, 2, 7, 5, 8, 10}
+# b = {3, 8, 7, 9, 10, 12}
+# c = a.copy()     # копирование(дублирование таких же значений, что и в а)
+# u = a.union(b) # объединение
+# i = a.intersection(b)   #пересечения
+# d1 = a.difference(b)  #разность
+# q = a.union(b).difference(a.intersection(b)) #сначала в скобках идет пересечение, потом по порядку (объединение и следом разностть)
+# a = {1, 8, 5}
+# b = frozenset(a)  #замороженное множество. Используем в тех случаях, когда мы точно уверены, что нельзя изменять изначальное множествро
+ 
+list1 = [1, 1, 2, -1, 5, 4, 8]
+print(set(list1))
+
 
