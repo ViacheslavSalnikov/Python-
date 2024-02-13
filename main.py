@@ -303,10 +303,21 @@
 
 # print(count)
 
-def sum_numbers(n):
-    summa = 0
-    for i in range(1, n+1):
-        summa += i
-    print(summa)
+# def sum_numbers(n):
+#     summa = 0
+#     for i in range(1, n+1):
+#         summa += i
+    # print(summa) #1
+    # return summa
+# a = sum_numbers(5) #3
+# sum_numbers(5) #1
+# print(sum_numbers(5)) #2
+# print(a) #3
 
-sum_numbers(5)
+# def sum_str(*args):
+#     res = ''
+#     for i in args:
+#         res += i
+#     return res
+
+# print(sum_str('q','e','l'))
