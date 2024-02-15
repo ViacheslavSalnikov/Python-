@@ -389,3 +389,21 @@
 # print(d['a']) # выводится значение указанное в 'a', d.get будет так же выведена 'a'
 # print(d.get('n')) # но если через get запустить несуществующий ключ, то ошибки с функции get не будет
 
+# inp = input('Enter string: ')
+# spl = inp.split()                     #считает сколько слов
+# out = set(spl)
+# print('Строка содержит: ', len(out), 'слов')
+
+# stroka = input('Введите вашу строку: ').split()
+# res = set()
+# for i in stroka:
+#     res.add(i.lower())
+# print(len(res))
+
+n = int(input('Введите число: '))
+maxx = n
+while n != 0:
+    n = int(input('Введите число: '))
+    if n > maxx:
+        maxx = n
+print(maxx)
