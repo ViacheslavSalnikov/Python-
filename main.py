@@ -375,12 +375,17 @@
 # print('Меня зовут', name,', мне', age, 'года. Я из города', city)
 # print(f'Меня зовут {name}, мне {age} года. Я из города {city}')
 
-stroka = input('Введите строку: ').split()
-res = dict()
-for i in stroka:
-    if i not in res:
-        print(i, end=' ')
-        res[i] = 1
-    else:
-        print(f'{i}_{res[i]}', end=' ')
-        res[i] += 1
+# stroka = input('Введите строку: ').split()
+# res = dict()
+# for i in stroka:
+#     if i not in res:
+#         print(i, end=' ')
+#         res[i] = 1
+#     else:
+#         print(f'{i}_{res[i]}', end=' ')
+#         res[i] += 1
+
+# d = {'a': 2, 'b': 5}
+# print(d['a']) # выводится значение указанное в 'a', d.get будет так же выведена 'a'
+# print(d.get('n')) # но если через get запустить несуществующий ключ, то ошибки с функции get не будет
+
